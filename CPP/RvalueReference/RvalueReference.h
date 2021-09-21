@@ -107,11 +107,15 @@ namespace NS_RvalueReference {
             int b = 2;
             const int c = 3;
             const int d = 4;
+            int &e = a;
+            int &&f = std::move(b);
 
             PerfectForward(a);
             PerfectForward(std::move(b));
             PerfectForward(c);
             PerfectForward(std::move(d));
+            PerfectForward(e);
+            PerfectForward(f);
 
             std::cout << "---------- RvalueReferenceTest() -----------" << std::endl << std::endl;
         }
