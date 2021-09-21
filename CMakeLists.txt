@@ -22,6 +22,7 @@ else( CMAKE_BUILD_TYPE STREQUAL "Release" )
     set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -s")
 endif( CMAKE_BUILD_TYPE STREQUAL "Debug" )
 
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/Iniclue")
 include_directories("/usr/include")
 link_directories("/usr/lib")
 
