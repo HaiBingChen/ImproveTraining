@@ -6,8 +6,8 @@ project(ImproveTraining)
 
 include(GNUInstallDirs)
 
-set(CMAKE_CXX_STANDARD 11)
-add_definitions(-std=c++11)
+set(CMAKE_CXX_STANDARD 14)
+add_definitions(-std=c++14)
 add_definitions(-Wall)
 
 if( CMAKE_BUILD_TYPE STREQUAL "Debug" )
@@ -22,6 +22,7 @@ else( CMAKE_BUILD_TYPE STREQUAL "Release" )
     set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -s")
 endif( CMAKE_BUILD_TYPE STREQUAL "Debug" )
 
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}")
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/Iniclue")
 include_directories("/usr/include")
 link_directories("/usr/lib")

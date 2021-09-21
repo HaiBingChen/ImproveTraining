@@ -7,5 +7,6 @@
 
 #include <iostream>
 #include <memory>
+#include <functional>
 
 #endif //IMPROVETRAINING_COMMONTRAINING_H

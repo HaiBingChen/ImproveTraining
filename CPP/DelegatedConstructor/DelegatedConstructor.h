@@ -124,7 +124,7 @@ namespace NS_DelegatedConstructor {
             auto m_pDelegated14 = std::make_shared<Delegated1>(1, "delegaed1_name2");
 
             std::cout << "=================================================" << std::endl;
-            
+
             auto m_pDelegated21 = std::make_shared<Delegated2>();
             auto m_pDelegated22 = std::make_shared<Delegated2>(2);
             auto m_pDelegated23 = std::make_shared<Delegated2>("delegaed2_name1");
