@@ -2,12 +2,17 @@
 // Created by mike on 2021/9/21.
 //
 
-#include "CommonTraining.h"
+#include <unistd.h>
+#include "CommonHeader.h"
+#include "UtilsHeader.h"
 #include "CPPHeader.h"
 
 int main(int argc, const char** argv)
 {
     std::cout << "This is the improve training for some of software skills" << std::endl;
+
+    Signal::Init();
+
 #if 0
     //CPP Training
     //==============================================================//

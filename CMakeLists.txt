@@ -30,6 +30,7 @@ link_directories("/usr/lib")
 #Build
 set(EXE_BIN_NAME "ImproveTraining")
 
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/Utils SOURCE_UTILS_FILES)
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/CPP SOURCE_CPP_FILES)
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/DataStructure SOURCE_DATA_STRUCTURE_FILES)
 aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/DesignPatterns SOURCE_DESIGN_PATTERNS_FILES)
@@ -37,6 +38,7 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/OperatingSystem SOURCE_OPERATIN
 
 add_executable(${EXE_BIN_NAME}
         main.cpp
+        ${SOURCE_UTILS_FILES}
         ${SOURCE_CPP_FILES}
         ${SOURCE_MGR_FILES}
         ${SOURCE_DATA_STRUCTURE_FILES}

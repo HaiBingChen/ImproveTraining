@@ -6,7 +6,7 @@
 #ifndef IMPROVETRAINING_DELEGATEDCONSTRUCTOR_H
 #define IMPROVETRAINING_DELEGATEDCONSTRUCTOR_H
 
-#include "CommonTraining.h"
+#include "CommonHeader.h"
 
 namespace NS_DelegatedConstructor {
     //普通冗余构造函数，每个构造函数都重复调用Init初始化函数

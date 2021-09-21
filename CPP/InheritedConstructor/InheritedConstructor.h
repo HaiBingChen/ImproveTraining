@@ -6,7 +6,7 @@
 #ifndef IMPROVETRAINING_INHERITEDCONSTRUCTOR_H
 #define IMPROVETRAINING_INHERITEDCONSTRUCTOR_H
 
-#include "CommonTraining.h"
+#include "CommonHeader.h"
 
 namespace NS_InheritedConstructor {
     class A {
